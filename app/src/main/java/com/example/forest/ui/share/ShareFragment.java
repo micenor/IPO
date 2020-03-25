@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -14,20 +15,24 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.forest.R;
 
+import org.w3c.dom.Text;
+
 public class ShareFragment extends Fragment {
 
     private ShareViewModel shareViewModel;
 
+    
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         shareViewModel =
                 ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_baul, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<String>() {
+        View root = inflater.inflate(R.layout.fragment_tienda, container, false);
+        ImageButton comprar = root.findViewById(R.id.buyButton);
+        final TextView monedas = root.findViewById(R.id.textView);
+        comprar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View view) {
+                monedas.setText("500");
             }
         });
         return root;

@@ -21,14 +21,13 @@ public class ShareFragment extends Fragment {
 
     private ShareViewModel shareViewModel;
 
-    TextView monedas;
-    ImageButton comprar;
+    
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         shareViewModel =
                 ViewModelProviders.of(this).get(ShareViewModel.class);
         View root = inflater.inflate(R.layout.fragment_tienda, container, false);
-        ImageButton comprar = root.findViewById(R.id.imageButton);
+        ImageButton comprar = root.findViewById(R.id.buyButton);
         final TextView monedas = root.findViewById(R.id.textView);
         comprar.setOnClickListener(new View.OnClickListener() {
             @Override

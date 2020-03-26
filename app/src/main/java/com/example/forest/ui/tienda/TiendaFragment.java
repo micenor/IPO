@@ -1,4 +1,4 @@
-package com.example.forest.ui.share;
+package com.example.forest.ui.tienda;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

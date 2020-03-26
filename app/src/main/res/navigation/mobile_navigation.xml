@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_amigos"
-        android:name="com.example.forest.ui.gallery.FriendsFragment"
+        android:name="com.example.forest.ui.friends.FriendsFragment"
         android:label="@string/menu_amigos"
         tools:layout="@layout/fragment_amigos" />
 
@@ -25,19 +25,19 @@
 
     <fragment
         android:id="@+id/nav_retos"
-        android:name="com.example.forest.ui.tools.RetosFragment"
+        android:name="com.example.forest.ui.retos.RetosFragment"
         android:label="@string/menu_retos"
         tools:layout="@layout/fragment_retos" />
 
     <fragment
         android:id="@+id/nav_tienda"
-        android:name="com.example.forest.ui.share.TiendaFragment"
+        android:name="com.example.forest.ui.tienda.TiendaFragment"
         android:label="@string/menu_tienda"
         tools:layout="@layout/fragment_baul" />
 
     <fragment
         android:id="@+id/nav_baul"
-        android:name="com.example.forest.ui.send.BaulFragment"
+        android:name="com.example.forest.ui.baul.BaulFragment"
         android:label="@string/menu_baul"
         tools:layout="@layout/fragment_tienda" />
 </navigation>

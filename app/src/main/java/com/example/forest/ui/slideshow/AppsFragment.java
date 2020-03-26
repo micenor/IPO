@@ -15,14 +15,10 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.forest.R;
 
 public class AppsFragment extends Fragment {
-
-    private SlideshowViewModel slideshowViewModel;
     TextView monedas;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
         View root = inflater.inflate(R.layout.fragment_apps, container, false);
         TextView monedas = root.findViewById(R.id.textView);
 

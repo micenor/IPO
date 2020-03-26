@@ -59,9 +59,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
+
+
+        //if(item.getItemId()==R.id.action_settings){
+        switch (item.getItemId()){
+            case R.id.action_settings:
         Intent settings= new Intent(this, SettingsActivity.class);
         startActivity(settings);
-        return true;
+        break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 
@@ -74,6 +81,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-    
+
 
 }

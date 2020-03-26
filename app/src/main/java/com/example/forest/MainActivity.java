@@ -1,10 +1,12 @@
 package com.example.forest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -46,12 +48,25 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    @Override
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
         return true;
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        Intent settings= new Intent(this, SettingsActivity.class);
+        startActivity(settings);
+        return true;
+    }
+
+
+
+
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -59,4 +74,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+    
+
 }

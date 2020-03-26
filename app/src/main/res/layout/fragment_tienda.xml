@@ -41,7 +41,7 @@
         android:layout_marginEnd="115dp"
         android:layout_marginRight="115dp"
         android:layout_marginBottom="16dp"
-        android:background="#c4ffbb"
+        android:background="#d6ffbe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

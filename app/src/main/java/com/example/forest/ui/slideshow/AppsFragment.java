@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.forest.R;
 
-public class SlideshowFragment extends Fragment {
+public class AppsFragment extends Fragment {
 
     private SlideshowViewModel slideshowViewModel;
     TextView monedas;

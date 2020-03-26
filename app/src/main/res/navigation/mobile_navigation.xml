@@ -13,31 +13,31 @@
 
     <fragment
         android:id="@+id/nav_amigos"
-        android:name="com.example.forest.ui.gallery.GalleryFragment"
+        android:name="com.example.forest.ui.gallery.FriendsFragment"
         android:label="@string/menu_amigos"
         tools:layout="@layout/fragment_amigos" />
 
     <fragment
         android:id="@+id/nav_apps"
-        android:name="com.example.forest.ui.slideshow.SlideshowFragment"
+        android:name="com.example.forest.ui.slideshow.AppsFragment"
         android:label="@string/menu_apps"
         tools:layout="@layout/fragment_apps" />
 
     <fragment
         android:id="@+id/nav_retos"
-        android:name="com.example.forest.ui.tools.ToolsFragment"
+        android:name="com.example.forest.ui.tools.RetosFragment"
         android:label="@string/menu_retos"
         tools:layout="@layout/fragment_retos" />
 
     <fragment
         android:id="@+id/nav_tienda"
-        android:name="com.example.forest.ui.share.ShareFragment"
+        android:name="com.example.forest.ui.share.TiendaFragment"
         android:label="@string/menu_tienda"
         tools:layout="@layout/fragment_baul" />
 
     <fragment
         android:id="@+id/nav_baul"
-        android:name="com.example.forest.ui.send.SendFragment"
+        android:name="com.example.forest.ui.send.BaulFragment"
         android:label="@string/menu_baul"
         tools:layout="@layout/fragment_tienda" />
 </navigation>

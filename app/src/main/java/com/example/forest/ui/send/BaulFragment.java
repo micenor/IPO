@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.forest.R;
 
-public class SendFragment extends Fragment {
+public class BaulFragment extends Fragment {
 
     private SendViewModel sendViewModel;
 

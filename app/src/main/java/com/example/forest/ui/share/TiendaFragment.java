@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.forest.R;
 
-public class ShareFragment extends Fragment {
+public class TiendaFragment extends Fragment {
     TextView monedas;
     final int MonedasDefault= 5000;
     int money=MonedasDefault;

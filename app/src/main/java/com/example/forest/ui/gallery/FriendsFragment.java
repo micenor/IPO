@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.forest.R;
 
-public class GalleryFragment extends Fragment {
+public class FriendsFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
 

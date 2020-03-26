@@ -17,7 +17,7 @@ public class FriendsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_amigos, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
+
         return root;
     }
 }

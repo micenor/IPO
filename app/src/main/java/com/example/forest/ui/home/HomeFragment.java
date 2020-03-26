@@ -30,7 +30,7 @@ CountDownTimer cronometro;
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-         TextView textView = root.findViewById(R.id.text_home);
+         //TextView textView = root.findViewById(R.id.text_home);
          tiempo = root.findViewById(R.id.text_tiempo);
          suma= root.findViewById(R.id.button);
          resta = root.findViewById(R.id.button2);

@@ -1,5 +1,6 @@
 package com.example.forest.ui.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -44,6 +45,7 @@ CountDownTimer cronometro;
         trans= root.findViewById(R.id.transicion);
         feliz=root.findViewById(R.id.feliz);
         triste= root.findViewById(R.id.triste);
+        satysfier= (Vibrator) this.getContext().getSystemService(Context.VIBRATOR_SERVICE);
          tiempo.setText(Formateo(tempo));
          empezar.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -69,9 +71,11 @@ CountDownTimer cronometro;
                          suma.setVisibility(View.VISIBLE);
                          resta.setVisibility(View.VISIBLE);
                          salir.setVisibility(View.INVISIBLE);
+                         SI.setVisibility(View.INVISIBLE);
+                         NO.setVisibility(View.INVISIBLE);
                          trans.setImageResource(R.drawable.monstruito_vivo);
                          feliz.setVisibility(View.VISIBLE);
-
+                         satysfier.vibrate(3000);
                      }
                  };
                  cronometro.start();

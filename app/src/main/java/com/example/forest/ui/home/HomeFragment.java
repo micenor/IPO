@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,7 +22,7 @@ import java.util.Locale;
 public class HomeFragment extends Fragment {
 TextView tiempo;
 Vibrator satysfier;
-Button suma,resta,empezar,salir,SI,NO;
+ImageButton suma,resta,empezar,salir,SI,NO;
 final int tempoDefault=600000;
 int tempo=tempoDefault;
 CountDownTimer cronometro;
@@ -36,8 +37,8 @@ CountDownTimer cronometro;
          resta = root.findViewById(R.id.button2);
          empezar = root.findViewById(R.id.button3);
          salir = root.findViewById(R.id.button4);
-        SI = root.findViewById(R.id.button5);
-        NO = root.findViewById(R.id.button6);
+        SI = root.findViewById(R.id.button4);
+        NO = root.findViewById(R.id.button5);
          tiempo.setText(Formateo(tempo));
          empezar.setOnClickListener(new View.OnClickListener() {
              @Override
